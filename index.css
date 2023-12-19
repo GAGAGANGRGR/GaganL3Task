@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #353434;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width:70%;
+  background-color: #afaaaa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.form-container div{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 10px;
+}
+.form-container input{
+  width: 60%;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 22px;
+}
+.form-container input[type="text"]{
+  width: 40%;
+}
+.form-container input[type="date"]{
+  width: 20%;
+}
+
+.form-container button {
+  background-color: #146803;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-container button:hover {
+  background-color: #e07d00;
+}
+
+
+.form-container textarea {
+  resize: none;
+  min-height: 80px;
+}
+.selected-day-container{
+  min-width: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.task-container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.task:hover {
+  background-color: #f8f8f8;
+}
+
+.task h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.task-buttons{
+  display: flex;
+  flex-direction: column;
+}
+.task button {
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task button:hover {
+  background-color: #e07d00;
+}
+
+.day-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.day-buttons-container button {
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+.day-buttons-container button.selected-day-button {
+  background-color: #e02d00;
+}
+
+.selected-day-container {
+  margin-top: 20px;
+}
